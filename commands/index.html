@@ -302,36 +302,57 @@ van a utilizar.
 Los comando son específicamente de Linux, pero los pueden usar en <code>GitBash</code> si
 trabajan con Windows.</p>
 <h2 id="comandos-de-consola">Comandos de consola<a class="headerlink" href="#comandos-de-consola" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="nb">pwd</span>              <span class="c1"># Imprime el directorio actual.</span>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Imprimir el directorio actual.</span>
+<span class="nb">pwd</span>
 
-ls               <span class="c1"># Lista todos los archivos y directorios del directorio actual.</span>
+<span class="c1"># Listar todos los archivos y directorios del directorio actual.</span>
+ls
 
-ls -a            <span class="c1"># Igual que el anterior pero unlcuye los ocultos.</span>
+<span class="c1"># Igual que el anterior pero incluye los ocultos.</span>
+ls -a
 
-mkdir dirname    <span class="c1"># Crea un nuevo directorio en el actual llamado &quot;dirname&quot;.</span>
+<span class="c1"># Crear un nuevo directorio en el actual llamado &quot;dirname&quot;.</span>
+mkdir dirname
 
-touch filename   <span class="c1"># Crea un archivo en el directorio actual llamado &quot;filename&quot;.</span>
+<span class="c1"># Crear un archivo en el directorio actual llamado &quot;filename&quot;.</span>
+touch filename
 
-<span class="nb">cd</span> code/python   <span class="c1"># Se nueve al directorio &quot;code/python&quot;.</span>
+<span class="c1"># Moverse al directorio &quot;code/python&quot;.</span>
+<span class="nb">cd</span> code/python
 </code></pre></div>
 
 
 <h2 id="comandos-de-git">Comandos de git<a class="headerlink" href="#comandos-de-git" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>git status                    <span class="c1"># Muestra el estado de los archivos respecto al repositorio.</span>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Mostrar el estado de los archivos respecto al repositorio.</span>
+git status
 
-git add &lt;filename&gt;            <span class="c1"># Agrega el archivo filename al versionado de git.</span>
+<span class="c1"># Agregar el archivo filename al versionado de git.</span>
+git add &lt;filename&gt;
 
-git add .                     <span class="c1"># Agrega todos los archivos que sufieron una modificación el versionado.</span>
+<span class="c1"># Agregae todos los archivos que sufieron una modificación al versionado.</span>
+git add .
 
-git commit -m &lt;mensaje&gt;       <span class="c1"># Genera un commit con todos los archivos que fueron modificados y gregados a git. Documenta el commit con el mensaje que escribamos.</span>
+<span class="c1"># Generar un commit con todos los archivos que fueron modificados y gregados a</span>
+<span class="c1"># git. Documenta el commit con el mensaje que escribamos.</span>
+git commit -m &lt;mensaje&gt;
 
-git checkout -b &lt;branch_name&gt; <span class="c1"># Genera una nueva rama localmente con el nombre &lt;branch_name&gt;. Y se mueve a esa rama.</span>
+<span class="c1"># Generar una nueva rama localmente con el nombre &lt;branch_name&gt;. Y moverse a</span>
+<span class="c1"># esa rama.</span>
+git checkout -b &lt;branch_name&gt;
 
-git checkout &lt;branch_name&gt;    <span class="c1"># Se mueve a la rama &lt;branch_name&gt; local y si no existe la crea y se mueve.</span>
+<span class="c1"># Moverse a la rama &lt;branch_name&gt; local y si no existe la crea y se mueve.</span>
+git checkout &lt;branch_name&gt;
 
-git push origin &lt;branch_name&gt; <span class="c1"># Se suben los commits locales a la rama &lt;branch_name&gt; ubicada en el remote con nombre origin.</span>
+<span class="c1"># Subir los cambios en commits locales a la rama &lt;branch_name&gt; ubicada en el</span>
+<span class="c1"># remote con nombre origin.</span>
+git push origin &lt;branch_name&gt;
 
-git pull origin &lt;branch_name&gt; <span class="c1"># Descarga los commits que estén en la rama del remote origin para la rama &lt;branch_name&gt;.</span>
+<span class="c1"># Descargar cambios en commits que estén en la rama del remote origin para la</span>
+<span class="c1"># rama &lt;branch_name&gt;.</span>
+git pull origin &lt;branch_name&gt;
+
+<span class="c1"># Fusionar la rama &lt;branch_name&gt; dentro de la rama actual.</span>
+git merge &lt;branch_name&gt;
 </code></pre></div>
                 
                   

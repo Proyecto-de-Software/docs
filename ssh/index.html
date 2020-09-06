@@ -357,6 +357,23 @@ The key<span class="err">&#39;</span>s randomart image is:
 <span class="p">|</span><span class="nv">o</span><span class="o">=</span>++.            <span class="p">|</span>
 +-----------------+
 </code></pre></div>
+
+
+<p>Tus claves fueron generadas en el directorio <code>/your_home/.ssh</code>:</p>
+<ul>
+<li><code>/your_home/.ssh/id_rsa.pub</code> es tu clave pública, y la que deberás
+configurar en los servicios que quieras hacer uso con este mecanismo.</li>
+<li><code>/your_home/.ssh/id_rsa</code>, es tu clave privada. Es importante que no pierdas
+nunca este archivo ya que no vas a poder recuperarlo. Además tampoco debes
+compartir el mismo ya que cualquier persona con dicha clave podría tomar tu
+identidad.</li>
+</ul>
+<p>En nuesto caso, la clave pública deberá ser configurada en el servicio de
+<strong>Gitlab</strong> para autenticarnos de forma automática a la hora de interactuar con
+el repositorio. Esto evita que tengamos que ingresar usuario y clave en cada
+operación.</p>
+<p>En la <a href="">siguiente guía</a> se explica como dar de alta nuestra clave ssh en
+<a href="https://gitlab.catedras.linti.unlp.edu.ar/"><strong>Gitlab</strong></a></p>
                 
                   
                 
