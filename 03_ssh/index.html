@@ -36,7 +36,7 @@
     
     
       
-        <title>Comandos - Prouecto de Softare - Guías 2020</title>
+        <title>Ssh - Prouecto de Softare - Guías 2020</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#comandos" tabindex="0" class="md-skip">
+      <a href="#ssh" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Comandos
+                Ssh
               
             </span>
           
@@ -170,8 +170,20 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href="../01_index/" title="Home" class="md-nav__link">
       Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../02_commands/" title="Comandos" class="md-nav__link">
+      Comandos
     </a>
   </li>
 
@@ -191,11 +203,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Comandos
+        Ssh
       </label>
     
-    <a href="./" title="Comandos" class="md-nav__link md-nav__link--active">
-      Comandos
+    <a href="./" title="Ssh" class="md-nav__link md-nav__link--active">
+      Ssh
     </a>
     
       
@@ -209,15 +221,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comandos-de-consola" class="md-nav__link">
-    Comandos de consola
+  <a href="#requisitos" class="md-nav__link">
+    Requisitos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comandos-de-git" class="md-nav__link">
-    Comandos de git
+  <a href="#generacion-de-clave" class="md-nav__link">
+    Generación de clave
   </a>
   
 </li>
@@ -239,8 +251,56 @@
 
 
   <li class="md-nav__item">
-    <a href="../ssh/" title="Ssh" class="md-nav__link">
-      Ssh
+    <a href="../04_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
+      Ssh Gitlab
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../05_instalar_git/" title="Instalar Git" class="md-nav__link">
+      Instalar Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../06_instalar_python/" title="Instalar Python" class="md-nav__link">
+      Instalar Python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../07_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+      Manejo de Paquetes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../08_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
+      Entornos Virtuales
     </a>
   </li>
 
@@ -266,15 +326,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comandos-de-consola" class="md-nav__link">
-    Comandos de consola
+  <a href="#requisitos" class="md-nav__link">
+    Requisitos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comandos-de-git" class="md-nav__link">
-    Comandos de git
+  <a href="#generacion-de-clave" class="md-nav__link">
+    Generación de clave
   </a>
   
 </li>
@@ -296,64 +356,84 @@
               
                 
                 
-                <h1 id="comandos">Comandos<a class="headerlink" href="#comandos" title="Permanent link">&para;</a></h1>
-<p>En esta guía vamos a dejar una lista de comandos de consola que posiblemente
-van a utilizar.
-Los comando son específicamente de Linux, pero los pueden usar en <code>GitBash</code> si
-trabajan con Windows.</p>
-<h2 id="comandos-de-consola">Comandos de consola<a class="headerlink" href="#comandos-de-consola" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Imprimir el directorio actual.</span>
-<span class="nb">pwd</span>
-
-<span class="c1"># Listar todos los archivos y directorios del directorio actual.</span>
-ls
-
-<span class="c1"># Igual que el anterior pero incluye los ocultos.</span>
-ls -a
-
-<span class="c1"># Crear un nuevo directorio en el actual llamado &quot;dirname&quot;.</span>
-mkdir dirname
-
-<span class="c1"># Crear un archivo en el directorio actual llamado &quot;filename&quot;.</span>
-touch filename
-
-<span class="c1"># Moverse al directorio &quot;code/python&quot;.</span>
-<span class="nb">cd</span> code/python
+                <h1 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h1>
+<p>La idea de esta guía es generar una clave ssh en la máquina en donde vamos a
+trabajar durante la cursada para luego agregarla a el servidor Gitlab.
+Con este método de seguridad vamos a evitar tener que completar usuario y clave
+cada vez que realicemos una operación hacia el servidor.</p>
+<h2 id="requisitos">Requisitos<a class="headerlink" href="#requisitos" title="Permanent link">&para;</a></h2>
+<p>Para la generación de clave necesitamos ejecutar el comando <code>ssh-keygen</code>. El
+mismo viene instalado en las distribuciones más comunes de linux. Para el caso
+de windows cuando instalen git van a obtener la consola Git Bash.</p>
+<h2 id="generacion-de-clave">Generación de clave<a class="headerlink" href="#generacion-de-clave" title="Permanent link">&para;</a></h2>
+<p>Para generar la clave ssh deberá ejecutar el siguiente comando:</p>
+<div class="codehilite"><pre><span></span><code>ssh-keygen -t rsa -b <span class="m">2048</span> -C <span class="s2">&quot;email@example.com&quot;</span>
 </code></pre></div>
 
 
-<h2 id="comandos-de-git">Comandos de git<a class="headerlink" href="#comandos-de-git" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Mostrar el estado de los archivos respecto al repositorio.</span>
-git status
-
-<span class="c1"># Agregar el archivo filename al versionado de git.</span>
-git add &lt;filename&gt;
-
-<span class="c1"># Agregae todos los archivos que sufieron una modificación al versionado.</span>
-git add .
-
-<span class="c1"># Generar un commit con todos los archivos que fueron modificados y gregados a</span>
-<span class="c1"># git. Documenta el commit con el mensaje que escribamos.</span>
-git commit -m &lt;mensaje&gt;
-
-<span class="c1"># Generar una nueva rama localmente con el nombre &lt;branch_name&gt;. Y moverse a</span>
-<span class="c1"># esa rama.</span>
-git checkout -b &lt;branch_name&gt;
-
-<span class="c1"># Moverse a la rama &lt;branch_name&gt; local y si no existe la crea y se mueve.</span>
-git checkout &lt;branch_name&gt;
-
-<span class="c1"># Subir los cambios en commits locales a la rama &lt;branch_name&gt; ubicada en el</span>
-<span class="c1"># remote con nombre origin.</span>
-git push origin &lt;branch_name&gt;
-
-<span class="c1"># Descargar cambios en commits que estén en la rama del remote origin para la</span>
-<span class="c1"># rama &lt;branch_name&gt;.</span>
-git pull origin &lt;branch_name&gt;
-
-<span class="c1"># Fusionar la rama &lt;branch_name&gt; dentro de la rama actual.</span>
-git merge &lt;branch_name&gt;
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Recuerda poner tu email en lugar de usar "email@example.com".</p>
+</div>
+<p>Se debe visualizar una respuesta similar a:</p>
+<div class="codehilite"><pre><span></span><code>Generating public/private rsa key pair.
+Enter file in which to save the key <span class="o">(</span>/home/user/.ssh/id_rsa<span class="o">)</span>:
 </code></pre></div>
+
+
+<p>Presione la tecla Enter para guardar las llaves en el subdirectorio <code>.ssh/</code>
+dentro del directorio de su usuario. Sino puede completar una ruta alternativa.</p>
+<p>Luego de guardar la clave le pedirá que inserte in passphrase como una instancia
+más de seguridad.</p>
+<div class="codehilite"><pre><span></span><code>Enter passphrase <span class="o">(</span>empty <span class="k">for</span> no passphrase<span class="o">)</span>:
+Enter same passphrase again:
+</code></pre></div>
+
+
+<p>Este password no es obligatorio así que puede dejarlo en blanco
+pulsando nuevamente la tecla Enter.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Si necesita cambiar esta passphrase en algún momento puede ejecutar el siguiente 
+comando</p>
+<p><code>bash
+ssh-keygen -p -f /path/to/ssh_key</code></p>
+</div>
+<p>Cuando el comando finaliza debería mostrarle una salida similar a la siguiente:</p>
+<div class="codehilite"><pre><span></span><code>Your identification has been saved in /your_home/.ssh/id_rsa.
+Your public key has been saved in /your_home/.ssh/id_rsa.pub.
+The key fingerprint is:
+a9:49:2e:2a:5e:33:3e:a9:de:4e:77:11:58:b6:90:26 mail@example.com
+The key<span class="err">&#39;</span>s randomart image is:
++--<span class="o">[</span> RSA <span class="m">2048</span><span class="o">]</span>----+
+<span class="p">|</span>     ..o         <span class="p">|</span>
+<span class="p">|</span>   E <span class="nv">o</span><span class="o">=</span> .        <span class="p">|</span>
+<span class="p">|</span>    o. o         <span class="p">|</span>
+<span class="p">|</span>        ..       <span class="p">|</span>
+<span class="p">|</span>      ..S        <span class="p">|</span>
+<span class="p">|</span>     o o.        <span class="p">|</span>
+<span class="p">|</span>   <span class="o">=</span>o.+.         <span class="p">|</span>
+<span class="p">|</span>. <span class="o">=</span>++..          <span class="p">|</span>
+<span class="p">|</span><span class="nv">o</span><span class="o">=</span>++.            <span class="p">|</span>
++-----------------+
+</code></pre></div>
+
+
+<p>Tus claves fueron generadas en el directorio <code>/your_home/.ssh</code>:</p>
+<ul>
+<li><code>/your_home/.ssh/id_rsa.pub</code> es tu clave pública, y la que deberás
+configurar en los servicios que quieras hacer uso con este mecanismo.</li>
+<li><code>/your_home/.ssh/id_rsa</code>, es tu clave privada. Es importante que no pierdas
+nunca este archivo ya que no vas a poder recuperarlo. Además tampoco debes
+compartir el mismo ya que cualquier persona con dicha clave podría tomar tu
+identidad.</li>
+</ul>
+<p>En nuesto caso, la clave pública deberá ser configurada en el servicio de
+<strong>Gitlab</strong> para autenticarnos de forma automática a la hora de interactuar con
+el repositorio. Esto evita que tengamos que ingresar usuario y clave en cada
+operación.</p>
+<p>En la <a href="">siguiente guía</a> se explica como dar de alta nuestra clave ssh en
+<a href="https://gitlab.catedras.linti.unlp.edu.ar/"><strong>Gitlab</strong></a></p>
                 
                   
                 
@@ -375,7 +455,7 @@ git merge &lt;branch_name&gt;
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../02_commands/" title="Comandos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -384,19 +464,19 @@ git merge &lt;branch_name&gt;
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Comandos
               </span>
             </div>
           </a>
         
         
-          <a href="../ssh/" title="Ssh" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../04_ssh_gitlab/" title="Ssh Gitlab" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Ssh
+                Ssh Gitlab
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
