@@ -1,0 +1,470 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Merge Requests en Gitlab - Prouecto de Softare - Guías 2020</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#merge-request-gitlab" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Prouecto de Softare - Guías 2020" aria-label="Prouecto de Softare - Guías 2020" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Prouecto de Softare - Guías 2020
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Merge Requests en Gitlab
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Prouecto de Softare - Guías 2020" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Prouecto de Softare - Guías 2020
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../01_commands/" title="Comandos" class="md-nav__link">
+      Comandos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../02_ssh/" title="Ssh" class="md-nav__link">
+      Ssh
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../03_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
+      Ssh Gitlab
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../04_instalar_git/" title="Instalar Git" class="md-nav__link">
+      Instalar Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../05_instalar_python/" title="Instalar Python" class="md-nav__link">
+      Instalar Python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../06_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+      Manejo de Paquetes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../07_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
+      Entornos Virtuales
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Merge Requests en Gitlab
+      </label>
+    
+    <a href="./" title="Merge Requests en Gitlab" class="md-nav__link md-nav__link--active">
+      Merge Requests en Gitlab
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-nuevo-mr" class="md-nav__link">
+    Crear un nuevo MR
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-nuevo-mr" class="md-nav__link">
+    Crear un nuevo MR
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="merge-request-gitlab">Merge Request Gitlab<a class="headerlink" href="#merge-request-gitlab" title="Permanent link">&para;</a></h1>
+<p>En esta guía vamos a mostrar como realizar un <strong>Merge Request</strong> dentro de
+<strong>Gitlab</strong>.
+El uso de <strong>Merge Request</strong> puede aportar mucho en el proceso de desarrollo por
+varios motivos entre los que se destacan:</p>
+<ul>
+<li>Ayuda a que todo el equipo se mantenga al tanto de los cambios.</li>
+<li>Sirve para realizar la técnica de <strong>Code Review</strong>.</li>
+<li>Permite abrir una discusión o debate sobre la implementación de una nueva
+  funcionalidad.</li>
+</ul>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/">Aquí</a> la documentación
+oficial de <strong>Gitlab</strong> con mucho material sobre los <strong>Merge Request</strong>.</p>
+<p>En esta guía veremos lo básico de la creación de un <strong>MR</strong> y el proceso de
+aprobación.</p>
+<h2 id="crear-un-nuevo-mr">Crear un nuevo MR<a class="headerlink" href="#crear-un-nuevo-mr" title="Permanent link">&para;</a></h2>
+<p>Para crear un nuevo <strong>MR</strong> vamos al apartado <strong>Merge Request</strong> del menú
+de nuestro proyecto.</p>
+<p><img alt="Merge Request" src="../img/mr_1.jpg" /></p>
+<p>Dentro de ese apartado <em>clickear</em> la opción <strong>"Nueva solicitud de fusión"</strong>.</p>
+<p><img alt="New Merge Request" src="../img/mr_2.jpg" /></p>
+<p>En la siguiente ventana vamos a poder seleccionar cual es la rama origen y cual
+la rama destino que queremos fusionar.</p>
+<p><img alt="Choice Branches" src="../img/mr_3.jpg" /></p>
+<p>Luego de elegir las ramas que queremos fusionar podemos ver algo así:</p>
+<p><img alt="Choiced Branches" src="../img/mr_4.jpg" /></p>
+<p>Es necesario confirmar para pasar a la siguiente sección donde vamos a tener
+un formulario para completar con información útil para el <strong>Merge Request</strong>.
+Podemos ponerle una descripción, asignarlo a un compañero para que lo revise,
+asociarlo a un <em>milestone</em> particular, agregarle etiquetas y configurar unas
+opciones propias del <strong>MR</strong> como borrar la rama origen cuando se realice y usar la
+estrategia <em>squash</em> para el <em>merge</em> de nuestros <em>commits</em>.</p>
+<p>Además, se ve el resumen de los <em>commits</em> que se van a agregar a la rama destino
+y una pestaña con los cambios que se van a realizar en los archivos.</p>
+<p>Para confirmar la creación del <strong>MR</strong> se debe hacer <em>submit</em> con el botón
+<strong>"Submit merge request"</strong>.</p>
+<p><img alt="Merge Request Form" src="../img/mr_5.jpg" /></p>
+<p>Una vez confirmado pasamos a la vista del <strong>Merge Request</strong> creado donde se
+pueden visualizar las cambios, comentar, aprobar los cambios y finalmente
+realizar el <em>merge</em>.</p>
+<p>Algunas veces la rama que queremos funcionar puede tener conflictos. Estos
+conflictos <strong>Gitlab</strong> no los puede resolver, entonces no queda mas que avisar
+del problema, pedir que se resuelvan para poder realizar el <em>merge</em>.</p>
+<p><img alt="Merge Request with conflicts" src="../img/mr_6.jpg" /></p>
+<p>Para resolver estos conflictos tenemos que traernos a la rama origen los cambios
+de la rama destino, es decir, hacemos un <em>merge</em> en sentido contrario. Luego queda
+resolver los conflictos que ocurran para luego hacer un <em>push</em> en nuestra rama
+origen.</p>
+<p>Si todo sale bien, al volver a la ventana anterior ahora vamos a ver esto:</p>
+<p><img alt="Merge Request without conflics" src="../img/mr_7.jpg" /></p>
+<p>Ahora podemos realizar el <em>merge</em> sin ningún problema.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../07_entornos_virtuales/" title="Entornos Virtuales" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Entornos Virtuales
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

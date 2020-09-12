@@ -36,7 +36,7 @@
     
     
       
-        <title>Ssh Gitlab - Prouecto de Softare - Guías 2020</title>
+        <title>Instalar Git - Prouecto de Softare - Guías 2020</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#agregar-la-clave-ssh-en-gitlab" tabindex="0" class="md-skip">
+      <a href="#guia-de-git" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Ssh Gitlab
+                Instalar Git
               
             </span>
           
@@ -170,7 +170,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../01_index/" title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -182,7 +182,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../02_commands/" title="Comandos" class="md-nav__link">
+    <a href="../01_commands/" title="Comandos" class="md-nav__link">
       Comandos
     </a>
   </li>
@@ -194,8 +194,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../03_ssh/" title="Ssh" class="md-nav__link">
+    <a href="../02_ssh/" title="Ssh" class="md-nav__link">
       Ssh
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../03_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
+      Ssh Gitlab
     </a>
   </li>
 
@@ -214,22 +226,100 @@
       
     
     
-    <a href="./" title="Ssh Gitlab" class="md-nav__link md-nav__link--active">
-      Ssh Gitlab
-    </a>
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Instalar Git
+      </label>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../05_instalar_git/" title="Instalar Git" class="md-nav__link">
+    <a href="./" title="Instalar Git" class="md-nav__link md-nav__link--active">
       Instalar Git
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    Instalación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-debian-based" class="md-nav__link">
+    En Debian-based
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-red-hat-based" class="md-nav__link">
+    En Red Hat-based
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-macos" class="md-nav__link">
+    En MacOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-windows" class="md-nav__link">
+    En Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
+    Crear una cuenta de Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-git" class="md-nav__link">
+    ¿Cómo usar Git?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-informacion-en-git" class="md-nav__link">
+    Configurar información en Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -239,7 +329,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../06_instalar_python/" title="Instalar Python" class="md-nav__link">
+    <a href="../05_instalar_python/" title="Instalar Python" class="md-nav__link">
       Instalar Python
     </a>
   </li>
@@ -251,7 +341,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../07_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+    <a href="../06_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
       Manejo de Paquetes
     </a>
   </li>
@@ -263,8 +353,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../08_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
+    <a href="../07_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
       Entornos Virtuales
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../08_merge_request/" title="Merge Requests en Gitlab" class="md-nav__link">
+      Merge Requests en Gitlab
     </a>
   </li>
 
@@ -286,6 +388,83 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    Instalación
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-debian-based" class="md-nav__link">
+    En Debian-based
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-red-hat-based" class="md-nav__link">
+    En Red Hat-based
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-macos" class="md-nav__link">
+    En MacOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-windows" class="md-nav__link">
+    En Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
+    Crear una cuenta de Github
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-git" class="md-nav__link">
+    ¿Cómo usar Git?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-informacion-en-git" class="md-nav__link">
+    Configurar información en Git
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -297,23 +476,52 @@
               
                 
                 
-                <h1 id="agregar-la-clave-ssh-en-gitlab">Agregar la clave SSH en Gitlab<a class="headerlink" href="#agregar-la-clave-ssh-en-gitlab" title="Permanent link">&para;</a></h1>
-<ol>
-<li>Primero necesitamos crear nuestra clave SSH y copiarla en el clipboar. Esto
-   se puede ver en <a href="../03_ssh/">esta guía</a>.</li>
-<li>Luego debe ir al Gitlab de la cátedra https://gitlab.catedras.linti.unlp.edu.ar/
-   e iniciar sesión.</li>
-<li>Selecciona en tu avatar en la esquina superior derecha y hace click en
-   <strong>Cónfiguración</strong>.
-    <img alt="Configuración Gitlab" src="../img/13_gitlab_ssh_1.jpg" /></li>
-<li>Selecciona <strong>Calves SSH</strong>.</li>
-<li>Pega la clave pública que copiaste en el paso uno en el textarea.</li>
-<li>Asegurate de incluír un nombre descriptivo a ti clave en el input <strong>Título</strong>,
-   como <em>PC de casa</em>.</li>
-<li>Opcionalmente se puede poner una fecha de expiración a la clave.</li>
-<li>Selecciona el botón <strong>Añadir clave</strong></li>
-</ol>
-<p><img alt="Claves SSH" src="../img/14_gitlab_ssh_2.jpg" /></p>
+                <h1 id="guia-de-git">Guía de Git<a class="headerlink" href="#guia-de-git" title="Permanent link">&para;</a></h1>
+<p>En la explicación práctica hablamos sobre los conceptos de <code>git</code>.</p>
+<h2 id="instalacion">Instalación<a class="headerlink" href="#instalacion" title="Permanent link">&para;</a></h2>
+<h3 id="en-debian-based">En Debian-based<a class="headerlink" href="#en-debian-based" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>sudo apt update
+sudo apt upgrade
+sudo apt install git
+</code></pre></div>
+
+
+<h3 id="en-red-hat-based">En Red Hat-based<a class="headerlink" href="#en-red-hat-based" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>sudo yum upgrade
+sudo yum install git
+</code></pre></div>
+
+
+<h3 id="en-macos">En MacOS<a class="headerlink" href="#en-macos" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>brew install git
+</code></pre></div>
+
+
+<h3 id="en-windows">En Windows<a class="headerlink" href="#en-windows" title="Permanent link">&para;</a></h3>
+<p>Descargar en instalar de <a href="https://gitforwindows.org/">gitforwindows</a> o de
+<a href="https://git-scm.com/download/win">git-scm</a>. Tener en cuenta que en la cátedra
+vamos a utilizar <code>GitBash</code> por lo cual deben asegurarse que se instale.</p>
+<h2 id="crear-una-cuenta-de-github">Crear una cuenta de Github<a class="headerlink" href="#crear-una-cuenta-de-github" title="Permanent link">&para;</a></h2>
+<p>Para crear una cuenta tienen que entrar a la
+<a href="https://github.com/">web de Github</a> y registrarse (Sing up).</p>
+<h2 id="como-usar-git">¿Cómo usar Git?<a class="headerlink" href="#como-usar-git" title="Permanent link">&para;</a></h2>
+<p>Vamos a ver dos formas para comenzar a trabajar con <code>Git</code>:</p>
+<ul>
+<li>Creando un repositorio desde cero y agregando los archivos iniciales.</li>
+<li>Descargando un proyecto ya creado y modificarlo.</li>
+</ul>
+<h3 id="configurar-informacion-en-git">Configurar información en Git<a class="headerlink" href="#configurar-informacion-en-git" title="Permanent link">&para;</a></h3>
+<p>En <code>git</code> cuando se va a realizar una operación para generar una nueva versión del
+código es necesario contar con información de usuario. Por esto es necesario que
+configuremos lo siguiente:</p>
+<div class="codehilite"><pre><span></span><code>$ git config --global user.name <span class="s2">&quot;John Doe&quot;</span>
+$ git config --global user.email johndoe@example.com
+</code></pre></div>
+
+
+<p>Para ver la configuración:</p>
+<div class="codehilite"><pre><span></span><code>git config --list
+</code></pre></div>
                 
                   
                 
@@ -335,7 +543,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../03_ssh/" title="Ssh" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../03_ssh_gitlab/" title="Ssh Gitlab" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -344,19 +552,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ssh
+                Ssh Gitlab
               </span>
             </div>
           </a>
         
         
-          <a href="../05_instalar_git/" title="Instalar Git" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../05_instalar_python/" title="Instalar Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Instalar Git
+                Instalar Python
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

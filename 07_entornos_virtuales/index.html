@@ -36,7 +36,7 @@
     
     
       
-        <title>Ssh - Prouecto de Softare - Guías 2020</title>
+        <title>Entornos Virtuales - Prouecto de Softare - Guías 2020</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#ssh" tabindex="0" class="md-skip">
+      <a href="#entornos-virtuales" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Ssh
+                Entornos Virtuales
               
             </span>
           
@@ -170,7 +170,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../01_index/" title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -182,8 +182,68 @@
 
 
   <li class="md-nav__item">
-    <a href="../02_commands/" title="Comandos" class="md-nav__link">
+    <a href="../01_commands/" title="Comandos" class="md-nav__link">
       Comandos
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../02_ssh/" title="Ssh" class="md-nav__link">
+      Ssh
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../03_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
+      Ssh Gitlab
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../04_instalar_git/" title="Instalar Git" class="md-nav__link">
+      Instalar Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../05_instalar_python/" title="Instalar Python" class="md-nav__link">
+      Instalar Python
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../06_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+      Manejo de Paquetes
     </a>
   </li>
 
@@ -203,11 +263,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ssh
+        Entornos Virtuales
       </label>
     
-    <a href="./" title="Ssh" class="md-nav__link md-nav__link--active">
-      Ssh
+    <a href="./" title="Entornos Virtuales" class="md-nav__link md-nav__link--active">
+      Entornos Virtuales
     </a>
     
       
@@ -221,15 +281,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requisitos" class="md-nav__link">
-    Requisitos
+  <a href="#como-crear-un-entorno-virtual" class="md-nav__link">
+    ¿Cómo crear un entorno virtual?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generacion-de-clave" class="md-nav__link">
-    Generación de clave
+  <a href="#como-usar-mi-entorno-virtual" class="md-nav__link">
+    ¿Como usar mi entorno virtual?
   </a>
   
 </li>
@@ -251,56 +311,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../04_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
-      Ssh Gitlab
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../05_instalar_git/" title="Instalar Git" class="md-nav__link">
-      Instalar Git
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../06_instalar_python/" title="Instalar Python" class="md-nav__link">
-      Instalar Python
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../07_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
-      Manejo de Paquetes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../08_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
-      Entornos Virtuales
+    <a href="../08_merge_request/" title="Merge Requests en Gitlab" class="md-nav__link">
+      Merge Requests en Gitlab
     </a>
   </li>
 
@@ -326,15 +338,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requisitos" class="md-nav__link">
-    Requisitos
+  <a href="#como-crear-un-entorno-virtual" class="md-nav__link">
+    ¿Cómo crear un entorno virtual?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generacion-de-clave" class="md-nav__link">
-    Generación de clave
+  <a href="#como-usar-mi-entorno-virtual" class="md-nav__link">
+    ¿Como usar mi entorno virtual?
   </a>
   
 </li>
@@ -356,84 +368,78 @@
               
                 
                 
-                <h1 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h1>
-<p>La idea de esta guía es generar una clave ssh en la máquina en donde vamos a
-trabajar durante la cursada para luego agregarla a el servidor Gitlab.
-Con este método de seguridad vamos a evitar tener que completar usuario y clave
-cada vez que realicemos una operación hacia el servidor.</p>
-<h2 id="requisitos">Requisitos<a class="headerlink" href="#requisitos" title="Permanent link">&para;</a></h2>
-<p>Para la generación de clave necesitamos ejecutar el comando <code>ssh-keygen</code>. El
-mismo viene instalado en las distribuciones más comunes de linux. Para el caso
-de windows cuando instalen git van a obtener la consola Git Bash.</p>
-<h2 id="generacion-de-clave">Generación de clave<a class="headerlink" href="#generacion-de-clave" title="Permanent link">&para;</a></h2>
-<p>Para generar la clave ssh deberá ejecutar el siguiente comando:</p>
-<div class="codehilite"><pre><span></span><code>ssh-keygen -t rsa -b <span class="m">2048</span> -C <span class="s2">&quot;email@example.com&quot;</span>
+                <h1 id="entornos-virtuales">Entornos virtuales<a class="headerlink" href="#entornos-virtuales" title="Permanent link">&para;</a></h1>
+<p><strong>Virtualenv</strong> es una herramienta usada para crear un ambiente aislado de
+<strong>Python</strong>. Este ambiente tiene su propio directorio de instalación que no
+comparte librerías con otros ambientes <strong>virtualenv</strong>.</p>
+<p>Esto tiene la ventaja que separa las librerías específicas que necesitamos en
+cada entorno virtual.</p>
+<p>Es útil hacer esta separación porque en el desarrollo de software es muy común
+que queramos usar en distintos proyectos distintas versiones de la misma
+librería.</p>
+<p>Por ejemplo, podemos tener un proyecto que hicimos hace un tiempo que usa una
+versión de <code>numpy</code> que ahora no es la última. Para ese proyecto puede estar
+perfecta esa versión y algunas veces puede ser peligroso actualizar una
+librería. Ahora si vamos a arrancar un nuevo proyecto seguramente queremos poder
+usar la última versión de <code>numpy</code>.</p>
+<p>La solución que nos da <strong>virtualenv</strong> es crear la cantidad de directorios
+virtuales que queramos con su versión de <strong>Python</strong> y sus librerías externas de
+forma aislada.</p>
+<p>Una práctica muy común con <strong>virtualenv</strong> es tener un entorno virtual por
+proyecto aislando cada proyecto y evitando cualquier problema de compatibilidad.</p>
+<h2 id="como-crear-un-entorno-virtual">¿Cómo crear un entorno virtual?<a class="headerlink" href="#como-crear-un-entorno-virtual" title="Permanent link">&para;</a></h2>
+<p>Primero necesitamos tener disponible la librería <strong>virtualenv</strong>. La instalamos
+de la siguiente manera:</p>
+<div class="codehilite"><pre><span></span><code>pip install virtualenv
+</code></pre></div>
+
+
+<p>Para crear un entorno virtual primero tenemos que ubicarnos en el directorio
+donde está el código de nuestra aplicación</p>
+<div class="codehilite"><pre><span></span><code>mkdir mi_proyecto
+<span class="nb">cd</span> mi_proyecto
+</code></pre></div>
+
+
+<p>Ahora vamos a crear un directorio virtual llamado <code>venv</code> para la versión de
+<strong>Python</strong> que hayamos configurado como global</p>
+<div class="codehilite"><pre><span></span><code>virtualenv -p python venv
 </code></pre></div>
 
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Recuerda poner tu email en lugar de usar "email@example.com".</p>
+<p>Recuerden tener en cuenta tener configurada la versión de Python con la que
+quieren arrancar el proyecto. En nuestro caso la versión <code>3.6.8</code></p>
+<p>Se pueden asegurar ejecutando:</p>
+<p><code>$ python --version</code></p>
 </div>
-<p>Se debe visualizar una respuesta similar a:</p>
-<div class="codehilite"><pre><span></span><code>Generating public/private rsa key pair.
-Enter file in which to save the key <span class="o">(</span>/home/user/.ssh/id_rsa<span class="o">)</span>:
+<p>Ya estamos listos para usar nuestro entorno virtual. Tanto la versión de
+<strong>Python</strong> con las librerías se van a almacenar dentro del directorio <code>venv</code>
+creado.</p>
+<h2 id="como-usar-mi-entorno-virtual">¿Como usar mi entorno virtual?<a class="headerlink" href="#como-usar-mi-entorno-virtual" title="Permanent link">&para;</a></h2>
+<p>Para activar el entorno ejecutamos</p>
+<div class="codehilite"><pre><span></span><code>. venv/bin/activate
 </code></pre></div>
 
 
-<p>Presione la tecla Enter para guardar las llaves en el subdirectorio <code>.ssh/</code>
-dentro del directorio de su usuario. Sino puede completar una ruta alternativa.</p>
-<p>Luego de guardar la clave le pedirá que inserte in passphrase como una instancia
-más de seguridad.</p>
-<div class="codehilite"><pre><span></span><code>Enter passphrase <span class="o">(</span>empty <span class="k">for</span> no passphrase<span class="o">)</span>:
-Enter same passphrase again:
+<p>Ahora si localizamos donde está el ejecutable de <strong>Python</strong> que utilizamos
+veremos que es el que está dentro del directorio virtual</p>
+<div class="codehilite"><pre><span></span><code>which python
+mi_proyecto/venv/bin/python
 </code></pre></div>
 
 
-<p>Este password no es obligatorio así que puede dejarlo en blanco
-pulsando nuevamente la tecla Enter.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Si necesita cambiar esta passphrase en algún momento puede ejecutar el siguiente 
-comando</p>
-<p><code>bash
-ssh-keygen -p -f /path/to/ssh_key</code></p>
-</div>
-<p>Cuando el comando finaliza debería mostrarle una salida similar a la siguiente:</p>
-<div class="codehilite"><pre><span></span><code>Your identification has been saved in /your_home/.ssh/id_rsa.
-Your public key has been saved in /your_home/.ssh/id_rsa.pub.
-The key fingerprint is:
-a9:49:2e:2a:5e:33:3e:a9:de:4e:77:11:58:b6:90:26 mail@example.com
-The key<span class="err">&#39;</span>s randomart image is:
-+--<span class="o">[</span> RSA <span class="m">2048</span><span class="o">]</span>----+
-<span class="p">|</span>     ..o         <span class="p">|</span>
-<span class="p">|</span>   E <span class="nv">o</span><span class="o">=</span> .        <span class="p">|</span>
-<span class="p">|</span>    o. o         <span class="p">|</span>
-<span class="p">|</span>        ..       <span class="p">|</span>
-<span class="p">|</span>      ..S        <span class="p">|</span>
-<span class="p">|</span>     o o.        <span class="p">|</span>
-<span class="p">|</span>   <span class="o">=</span>o.+.         <span class="p">|</span>
-<span class="p">|</span>. <span class="o">=</span>++..          <span class="p">|</span>
-<span class="p">|</span><span class="nv">o</span><span class="o">=</span>++.            <span class="p">|</span>
-+-----------------+
+<p>Es necesario desactivar si queremos volver a usar el <strong>Python</strong> que instalamos
+globalmente</p>
+<div class="codehilite"><pre><span></span><code>deactivate
 </code></pre></div>
 
 
-<p>Tus claves fueron generadas en el directorio <code>/your_home/.ssh</code>:</p>
-<ul>
-<li><code>/your_home/.ssh/id_rsa.pub</code> es tu clave pública, y la que deberás
-configurar en los servicios que quieras hacer uso con este mecanismo.</li>
-<li><code>/your_home/.ssh/id_rsa</code>, es tu clave privada. Es importante que no pierdas
-nunca este archivo ya que no vas a poder recuperarlo. Además tampoco debes
-compartir el mismo ya que cualquier persona con dicha clave podría tomar tu
-identidad.</li>
-</ul>
-<p>En nuesto caso, la clave pública deberá ser configurada en el servicio de
-<strong>Gitlab</strong> para autenticarnos de forma automática a la hora de interactuar con
-el repositorio. Esto evita que tengamos que ingresar usuario y clave en cada
-operación.</p>
-<p>En la <a href="">siguiente guía</a> se explica como dar de alta nuestra clave ssh en
-<a href="https://gitlab.catedras.linti.unlp.edu.ar/"><strong>Gitlab</strong></a></p>
+<p>Ahora si necesitamos instalar una librería tenemos que activar el entorno y
+usar <code>pip</code></p>
+<div class="codehilite"><pre><span></span><code>pip install numpy
+</code></pre></div>
                 
                   
                 
@@ -455,7 +461,7 @@ operación.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../02_commands/" title="Comandos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../06_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -464,19 +470,19 @@ operación.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Comandos
+                Manejo de Paquetes
               </span>
             </div>
           </a>
         
         
-          <a href="../04_ssh_gitlab/" title="Ssh Gitlab" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../08_merge_request/" title="Merge Requests en Gitlab" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Ssh Gitlab
+                Merge Requests en Gitlab
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

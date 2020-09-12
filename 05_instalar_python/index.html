@@ -36,7 +36,7 @@
     
     
       
-        <title>Instalar Git - Prouecto de Softare - Guías 2020</title>
+        <title>Instalar Python - Prouecto de Softare - Guías 2020</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#guia-de-git" tabindex="0" class="md-skip">
+      <a href="#instalacion-de-python" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Instalar Git
+                Instalar Python
               
             </span>
           
@@ -170,7 +170,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../01_index/" title="Home" class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -182,7 +182,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../02_commands/" title="Comandos" class="md-nav__link">
+    <a href="../01_commands/" title="Comandos" class="md-nav__link">
       Comandos
     </a>
   </li>
@@ -194,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../03_ssh/" title="Ssh" class="md-nav__link">
+    <a href="../02_ssh/" title="Ssh" class="md-nav__link">
       Ssh
     </a>
   </li>
@@ -206,8 +206,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../04_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
+    <a href="../03_ssh_gitlab/" title="Ssh Gitlab" class="md-nav__link">
       Ssh Gitlab
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../04_instalar_git/" title="Instalar Git" class="md-nav__link">
+      Instalar Git
     </a>
   </li>
 
@@ -227,11 +239,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Instalar Git
+        Instalar Python
       </label>
     
-    <a href="./" title="Instalar Git" class="md-nav__link md-nav__link--active">
-      Instalar Git
+    <a href="./" title="Instalar Python" class="md-nav__link md-nav__link--active">
+      Instalar Python
     </a>
     
       
@@ -245,37 +257,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
-    Instalación
+  <a href="#por-que-usar-una-herramienta-para-manejar-versiones" class="md-nav__link">
+    ¿Por qué usar una herramienta para manejar versiones?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-y-macos" class="md-nav__link">
+    Linux y MacOS
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#en-debian-based" class="md-nav__link">
-    En Debian-based
+  <a href="#instalacion-con-git-linux-y-macos-recomendada" class="md-nav__link">
+    Instalación con Git (Linux y MacOS) RECOMENDADA
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#en-red-hat-based" class="md-nav__link">
-    En Red Hat-based
+  <a href="#uso-de-pyenv" class="md-nav__link">
+    Uso de pyenv
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#en-macos" class="md-nav__link">
-    En MacOS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#en-windows" class="md-nav__link">
-    En Windows
+  <a href="#instalacion-con-brew-macos" class="md-nav__link">
+    Instalación con brew (MacOS)
   </a>
   
 </li>
@@ -286,23 +298,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
-    Crear una cuenta de Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-usar-git" class="md-nav__link">
-    ¿Cómo usar Git?
+  <a href="#instalacion-en-windows" class="md-nav__link">
+    Instalación en Windows
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configurar-informacion-en-git" class="md-nav__link">
-    Configurar información en Git
+  <a href="#desde-instalador" class="md-nav__link">
+    Desde instalador
   </a>
   
 </li>
@@ -329,19 +334,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../06_instalar_python/" title="Instalar Python" class="md-nav__link">
-      Instalar Python
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../07_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
+    <a href="../06_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-nav__link">
       Manejo de Paquetes
     </a>
   </li>
@@ -353,8 +346,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../08_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
+    <a href="../07_entornos_virtuales/" title="Entornos Virtuales" class="md-nav__link">
       Entornos Virtuales
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../08_merge_request/" title="Merge Requests en Gitlab" class="md-nav__link">
+      Merge Requests en Gitlab
     </a>
   </li>
 
@@ -380,37 +385,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
-    Instalación
+  <a href="#por-que-usar-una-herramienta-para-manejar-versiones" class="md-nav__link">
+    ¿Por qué usar una herramienta para manejar versiones?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-y-macos" class="md-nav__link">
+    Linux y MacOS
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#en-debian-based" class="md-nav__link">
-    En Debian-based
+  <a href="#instalacion-con-git-linux-y-macos-recomendada" class="md-nav__link">
+    Instalación con Git (Linux y MacOS) RECOMENDADA
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#en-red-hat-based" class="md-nav__link">
-    En Red Hat-based
+  <a href="#uso-de-pyenv" class="md-nav__link">
+    Uso de pyenv
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#en-macos" class="md-nav__link">
-    En MacOS
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#en-windows" class="md-nav__link">
-    En Windows
+  <a href="#instalacion-con-brew-macos" class="md-nav__link">
+    Instalación con brew (MacOS)
   </a>
   
 </li>
@@ -421,23 +426,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#crear-una-cuenta-de-github" class="md-nav__link">
-    Crear una cuenta de Github
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-usar-git" class="md-nav__link">
-    ¿Cómo usar Git?
+  <a href="#instalacion-en-windows" class="md-nav__link">
+    Instalación en Windows
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configurar-informacion-en-git" class="md-nav__link">
-    Configurar información en Git
+  <a href="#desde-instalador" class="md-nav__link">
+    Desde instalador
   </a>
   
 </li>
@@ -464,60 +462,104 @@
               
                 
                 
-                <h1 id="guia-de-git">Guía de Git<a class="headerlink" href="#guia-de-git" title="Permanent link">&para;</a></h1>
-<p>En la explicación práctica hablamos sobre los conceptos de git. Aquí están las
-<a href="https://docs.google.com/presentation/d/1pQyjBfV_tz7M2PCS3nvcnHsRaJmJaWhbYeIzzddTfVA/edit?usp=sharing">diapositivas</a>.</p>
-<h2 id="instalacion">Instalación<a class="headerlink" href="#instalacion" title="Permanent link">&para;</a></h2>
+                <h1 id="instalacion-de-python">Instalación de Python<a class="headerlink" href="#instalacion-de-python" title="Permanent link">&para;</a></h1>
+<p>En esta guía vamos a ver distintas formas de realizar la instalación de la
+la versión específica de <strong>Python</strong> que se utilizará en la cátedra para distintos
+sistemas operativos.</p>
+<p>El objetivo es que todos los alumnos que cursen la cátedra puedan instalar
+en sus sistemas operativos la versión específica de <strong>Python</strong> que vamos a usar
+dentro de la cátedra.</p>
+<p>El mecanismo para esto es utilizar una herramienta de manejo de versiones para
+<strong>Python</strong> (Python Versión Manager) en los sistemas operativos Linux y MacOS.</p>
+<p>En el caso del sistema operativo Windows no vamos a usar esta herramienta ya
+que no funcionan del todo bien, y tampoco algunas alternativas que probamos. En
+este caso vamos a instalar la versión específica de <strong>Python</strong> que utilicemos.</p>
+<h2 id="por-que-usar-una-herramienta-para-manejar-versiones">¿Por qué usar una herramienta para manejar versiones?<a class="headerlink" href="#por-que-usar-una-herramienta-para-manejar-versiones" title="Permanent link">&para;</a></h2>
+<p>La idea de usar este tipo de herramientas son:</p>
+<ul>
+<li>Instalar prácticamente cualquier versión de <strong>Python</strong> (o del lenguaje que sea)</li>
+<li>Tener instaladas múltiples versiones</li>
+</ul>
+<p>Otro objetivo para esta cátedra es lograr que todos ustedes tengan exactamente
+la misma versión de <strong>Python</strong>.</p>
+<p>La herramienta que vamos a usar es <a href="git@github.com:pyenv/pyenv.git"><code>pyenv</code></a></p>
+<h2 id="linux-y-macos">Linux y MacOS<a class="headerlink" href="#linux-y-macos" title="Permanent link">&para;</a></h2>
+<h3 id="instalacion-con-git-linux-y-macos-recomendada">Instalación con Git (Linux y MacOS) RECOMENDADA<a class="headerlink" href="#instalacion-con-git-linux-y-macos-recomendada" title="Permanent link">&para;</a></h3>
+<p>Hacer el <em>checkout</em> de <code>pyenv</code> en el directorio donde quieras que se instale.
+Un buen lugar puede ser <code>$HOME/.pyenv</code>.</p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+</code></pre></div>
+
+
+<p>Define la variable de entorno <code>PYENV_ROOT</code> para tener disponible el <em>path</em> donde
+fue clonado el repositorio y agrega <code>$PYENV_ROOT/bin</code> a la variable <code>$PATH</code> para
+tener acceso al comando <code>pyenv</code> en la terminal.</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+<span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+</code></pre></div>
+
+
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Tener en cuenta que esta guía de instalación de git no hace falta si se
-utilza la máquina virtual que entregamos en la cátedra para trabajar dado
-que tiene todo instalado.
-La máquina vistual la pueden descargar desde <a href="https://catedras.info.unlp.edu.ar/mod/url/view.php?id=24366">aquí</a></p>
-</div>
-<h3 id="en-debian-based">En Debian-based<a class="headerlink" href="#en-debian-based" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>sudo apt update
-sudo apt upgrade
-sudo apt install git
-</code></pre></div>
-
-
-<h3 id="en-red-hat-based">En Red Hat-based<a class="headerlink" href="#en-red-hat-based" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>sudo yum upgrade
-sudo yum install git
-</code></pre></div>
-
-
-<h3 id="en-macos">En MacOS<a class="headerlink" href="#en-macos" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>brew install git
-</code></pre></div>
-
-
-<h3 id="en-windows">En Windows<a class="headerlink" href="#en-windows" title="Permanent link">&para;</a></h3>
-<p>Descargar en instalar de <a href="https://gitforwindows.org/">gitforwindows</a> o de
-<a href="https://git-scm.com/download/win">git-scm</a>. Tener en cuenta que en la cátedra
-vamos a utilizar <code>GitBash</code> por lo cual deben asegurarse que se instale.</p>
-<h2 id="crear-una-cuenta-de-github">Crear una cuenta de Github<a class="headerlink" href="#crear-una-cuenta-de-github" title="Permanent link">&para;</a></h2>
-<p>Para crear una cuenta tienen que entrar a la
-<a href="https://github.com/">web de Github</a> y regitrarse (Sing up).</p>
-<h2 id="como-usar-git">¿Cómo usar Git?<a class="headerlink" href="#como-usar-git" title="Permanent link">&para;</a></h2>
-<p>Vamos a ver dos formas para comenzar a trabajar con <code>Git</code>:</p>
 <ul>
-<li>Creando un repositorio desde cero y agregando los archivos iniciales.</li>
-<li>Descargando un proyecto ya creado y modificarlo.</li>
+<li>Si usas <strong>ZSH</strong> modifica el comando con <code>~/.zshrc</code> en lugar de
+<code>~/.bash_profile</code>.</li>
+<li>Para <strong>Ubuntu</strong> y <strong>Fedora</strong> usa <code>~/.bashrc</code> en en lugar de
+<code>~/.bash_profile</code>.</li>
 </ul>
-<h3 id="configurar-informacion-en-git">Configurar información en Git<a class="headerlink" href="#configurar-informacion-en-git" title="Permanent link">&para;</a></h3>
-<p>En git cuando se va a realizar una operación para generar una nueva versión del
-código es necesario contar con información de usuario. Por esto es necesario que
-configuremos lo siguiente:</p>
-<div class="codehilite"><pre><span></span><code>$ git config --global user.name <span class="s2">&quot;John Doe&quot;</span>
-$ git config --global user.email johndoe@example.com
+</div>
+<p>Finalmente para terminar de configurarlo y tener el autocompletado en la consola
+ejecuta el siguiente comando:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">echo</span> -e <span class="s1">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &quot;$(pyenv init -)&quot;\nfi&#39;</span> &gt;&gt; ~/.bash_profile
 </code></pre></div>
 
 
-<p>Para ver la configuración:</p>
-<div class="codehilite"><pre><span></span><code>git config --list
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Al igual que en el paso anterior reemplaza con <code>~/.zshrc</code> o <code>~/.bashrc</code> en
+el comando según corresponda.</p>
+</div>
+<p>Luego reiniciar la terminal para que tome los cambios.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Guía completa en el <a href="https://github.com/pyenv/pyenv">README de pyenv</a>.</p>
+</div>
+<h3 id="uso-de-pyenv">Uso de <code>pyenv</code><a class="headerlink" href="#uso-de-pyenv" title="Permanent link">&para;</a></h3>
+<p>Para buscar que versión de <strong>Python</strong> queremos instalar podemos usar:</p>
+<div class="codehilite"><pre><span></span><code>pyenv install <span class="m">3</span>.6.8
 </code></pre></div>
+
+
+<p>Ahora podemos seleccionar esta versión como global</p>
+<div class="codehilite"><pre><span></span><code>pyenv global <span class="m">3</span>.6.8
+</code></pre></div>
+
+
+<p>o como versión local en el directorio que nos encontremos</p>
+<div class="codehilite"><pre><span></span><code>pyenv <span class="nb">local</span> <span class="m">3</span>.6.8
+</code></pre></div>
+
+
+<h3 id="instalacion-con-brew-macos">Instalación con brew (MacOS)<a class="headerlink" href="#instalacion-con-brew-macos" title="Permanent link">&para;</a></h3>
+<p>Se puede instalar <code>pyenv</code> usando el manejador de paquetes
+<a href="https://brew.sh/">Homebrew</a> para MacOS.</p>
+<div class="codehilite"><pre><span></span><code>brew update
+brew install pyenv
+</code></pre></div>
+
+
+<h2 id="instalacion-en-windows">Instalación en Windows<a class="headerlink" href="#instalacion-en-windows" title="Permanent link">&para;</a></h2>
+<h3 id="desde-instalador">Desde instalador<a class="headerlink" href="#desde-instalador" title="Permanent link">&para;</a></h3>
+<p>Descarga el instalador <a href="https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe">aquí</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tener en cuenta de seleccionar el box de abajo para agregar el ejecutable de
+Python al PATH del sistema.</p>
+<p><img alt="Python Windows Installer" src="../img/python-win.png" /></p>
+</div>
+<p>Otros instaladores: https://www.python.org/downloads/release/python-368/</p>
+<p>Ahora tenemos la versión de Python que necesitamos en nuestro sistema y estamos
+listo para utilizarlo.</p>
                 
                   
                 
@@ -539,7 +581,7 @@ $ git config --global user.email johndoe@example.com
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../04_ssh_gitlab/" title="Ssh Gitlab" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../04_instalar_git/" title="Instalar Git" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -548,19 +590,19 @@ $ git config --global user.email johndoe@example.com
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ssh Gitlab
+                Instalar Git
               </span>
             </div>
           </a>
         
         
-          <a href="../06_instalar_python/" title="Instalar Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../06_manejo_de_paquetes/" title="Manejo de Paquetes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Instalar Python
+                Manejo de Paquetes
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
