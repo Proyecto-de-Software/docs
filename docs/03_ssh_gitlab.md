@@ -9,7 +9,7 @@
     ![Configuración Gitlab](img/13_gitlab_ssh_1.jpg)
 4. Selecciona **Claves SSH**.
 5. Pega la clave pública que copiaste en el paso uno en el textarea.
-6. Asegurate de incluir un nombre descriptivo a ti clave en el input **Título**,
+6. Asegurate de incluir un nombre descriptivo a tu clave en el input **Título**,
    como *PC de casa*.
 7. Opcionalmente se puede poner una fecha de expiración a la clave.
 8. Selecciona el botón **Añadir clave**
