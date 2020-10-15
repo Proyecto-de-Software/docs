@@ -449,12 +449,12 @@
                 
                 
                 <h1 id="guia-de-estilos">Guía de estilos<a class="headerlink" href="#guia-de-estilos" title="Permanent link">&para;</a></h1>
-<p>Las guía de estilo ayudan a los equipos de desarrolladores a escribir código
-consistente haciendo que sea fácil de entender para todos los miembros del
+<p>Las guías de estilo ayudan a los equipos de desarrollo a escribir código
+consistente simplificando su entendimiento a todos/as los/as miembros del
 equipo.</p>
-<p>Python define en <strong>PEP8</strong> la guía de estilos base y en <strong>PEP257</strong> la convención
-para Docstrings. Teniendo esta referencia vamos a nombrar las normas mas
-importantes que esperamos que traten de cumplirlas en el trabajo.</p>
+<p>Python define en <strong>PEP8</strong> como guía de estilos base y en <strong>PEP257</strong> la convención
+para Docstrings. Teniendo esta referencia vamos a mencionar las normas mas
+importantes que esperamos que traten de cumplir en el trabajo.</p>
 <p>Antes de comenzar a nombrarlas es necesario decir de una regla base a todas las
 siguientes a la hora de desarrollar una aplicación en equipo: <strong>ser
 consistentes</strong>. ¿Qué quiere decir esto? que <strong>todos los miembros sigan las mismas
@@ -468,10 +468,10 @@ reglas para el estilo de escritura del código</strong>.</p>
 <li>No dejar líneas en blanco luego de la línea <code>def</code></li>
 <li>No dejar espacios dentro de los paréntesis, corchetes y las llaves</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># good</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
   <span class="n">spam</span><span class="p">(</span><span class="n">ham</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">{</span><span class="n">eggs</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">[])</span>
 
-  <span class="c1"># bad</span>
+  <span class="c1"># mal</span>
   <span class="n">spam</span><span class="p">(</span> <span class="n">ham</span><span class="p">[</span> <span class="mi">1</span> <span class="p">],</span> <span class="p">{</span> <span class="n">eggs</span><span class="p">:</span> <span class="mi">2</span> <span class="p">},</span> <span class="p">)</span>
 </code></pre></div>
 
@@ -479,10 +479,10 @@ reglas para el estilo de escritura del código</strong>.</p>
 <ul>
 <li>Rodear los operadores con un espacio en blanco de ambos lados</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># good</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
   <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span>
 
-  <span class="c1"># bad</span>
+  <span class="c1"># mal</span>
   <span class="n">x</span><span class="o">&lt;</span><span class="mi">1</span>
 </code></pre></div>
 
@@ -490,17 +490,33 @@ reglas para el estilo de escritura del código</strong>.</p>
 <ul>
 <li>No usar espacios en blanco alrededor del <code>=</code> cuando se pasa un <code>keyword
   argument</code> o se define un valor por defecto en una función</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
+  <span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">keyword_argument</span><span class="o">=</span><span class="n">value</span><span class="p">):</span>
+      <span class="k">pass</span>
+
+  <span class="n">function_name</span><span class="p">(</span><span class="n">keyword_argument</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+  <span class="c1"># mal</span>
+  <span class="k">def</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">keyword_argument</span> <span class="o">=</span> <span class="n">value</span><span class="p">):</span>
+      <span class="k">pass</span>
+
+  <span class="n">function_name</span><span class="p">(</span><span class="n">keyword_argument</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+
+<ul>
 <li>Usar líneas en blanco para la separación de lógica dentro de las
   funciones/métodos siempre que esté justificado</li>
 <li>Mover los argumentos de una función de una nueva línea con indentación si no
   entran todos en la primer línea</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># Good</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
   <span class="k">def</span> <span class="nf">long_function_name</span><span class="p">(</span><span class="n">var_one</span><span class="p">,</span> <span class="n">var_two</span><span class="p">,</span> <span class="n">var_three</span><span class="p">,</span>
           <span class="n">var_four</span><span class="p">):</span>
       <span class="nb">print</span><span class="p">(</span><span class="n">var_one</span><span class="p">)</span>
 
-  <span class="c1"># Good</span>
+  <span class="c1"># bien</span>
   <span class="k">def</span> <span class="nf">long_function_name</span><span class="p">(</span>
       <span class="n">var_one</span><span class="p">,</span>
       <span class="n">var_two</span><span class="p">,</span>
@@ -515,7 +531,7 @@ reglas para el estilo de escritura del código</strong>.</p>
 <li>Mover las condiciones a nuevas líneas si no entran en el máximo determinado.
 Esto te ayudará a entender la condición mirando de arriba hacia abajo.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># Good</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
   <span class="k">if</span> <span class="p">(</span><span class="n">this_is_one_thing</span>
       <span class="ow">and</span> <span class="n">that_is_another_thing</span>
       <span class="ow">or</span> <span class="n">that_is_third_thing</span>
@@ -539,11 +555,11 @@ Esto te ayudará a entender la condición mirando de arriba hacia abajo.</li>
 <ul>
 <li>Use argumentos nombrados para aumentar la legibilidad.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># Bad</span>
-  <span class="n">urlget</span><span class="p">(</span><span class="s1">&#39;[http://google.com](http://google.com/)&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-
-  <span class="c1"># Good</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
   <span class="n">urlget</span><span class="p">(</span><span class="s1">&#39;[http://google.com](http://google.com/)&#39;</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+  <span class="c1"># mal</span>
+  <span class="n">urlget</span><span class="p">(</span><span class="s1">&#39;[http://google.com](http://google.com/)&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 </code></pre></div>
 
 
@@ -567,20 +583,20 @@ Esto te ayudará a entender la condición mirando de arriba hacia abajo.</li>
 <ul>
 <li>Siempre comience el bloque de código en una nueva línea</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># Bad</span>
-  <span class="k">if</span> <span class="n">flag</span><span class="p">:</span> <span class="k">return</span> <span class="kc">None</span>
-
-  <span class="c1"># Good</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># bien</span>
   <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
       <span class="k">return</span> <span class="kc">None</span>
+
+  <span class="c1"># mal</span>
+  <span class="k">if</span> <span class="n">flag</span><span class="p">:</span> <span class="k">return</span> <span class="kc">None</span>
 </code></pre></div>
 
 
 <ul>
 <li>Separa el símbolo <code>#</code> del contenido del comentario con un espacio en blanco</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1">#bad comment</span>
-  <span class="c1"># good comment</span>
+<div class="codehilite"><pre><span></span><code>  <span class="c1"># good comment</span>
+  <span class="c1">#bad comment</span>
 </code></pre></div>
 
 
